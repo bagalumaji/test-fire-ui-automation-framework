@@ -1,6 +1,3 @@
-# test-fire-ui-automation-framework
-   ## This is a demo framework for ui automation 
-
 # Test-Fire UI Automation Framework
 
 The **Test-Fire UI Automation Framework** is a powerful and flexible test automation framework for web applications. It integrates several popular tools and libraries to streamline the automation testing process.
