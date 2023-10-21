@@ -44,7 +44,6 @@
             <artifactId>zerocell-core</artifactId>
             <version>${zerocell.version}</version>
         </dependency>
-
     </dependencies>
     <build>
         <plugins>
