@@ -1,13 +1,17 @@
 package com.bagal.tests;
 
-import com.bagal.drivers.DriverManager;
+import com.bagal.pages.HomePage;
 import com.bagal.testbase.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import static com.bagal.configs.TestFireConfigReader.getTestFireConfigs;
 
 public class LoginTests extends TestBase {
     @Test
     public void loginTest(){
-        System.out.println("DriverManager.getDriver().getCurrentUrl() = " + DriverManager.getDriver().getCurrentUrl());
-        System.out.println("DriverManager.getDriver().getTitle() = " + DriverManager.getDriver().getTitle());
+        HomePage homePage = new HomePage().clickOnSignInLink();
+        Assert.assertTrue(homePage.isPageLoaded());
+        homePage.loginToApplication(getTestFireConfigs().username(), getTestFireConfigs().password());
     }
 }
