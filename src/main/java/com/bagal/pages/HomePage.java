@@ -1,4 +1,6 @@
 package com.bagal.pages;
 
-public class HomePage {
+import com.bagal.pages.basepage.BasePage;
+
+public class HomePage extends BasePage {
 }
