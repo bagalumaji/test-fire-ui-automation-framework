@@ -1,4 +1,4 @@
-package com.bagal.factories.browseroptions;
+package com.bagal.browseroptions;
 
 import com.bagal.configs.TestFireConfigReader;
 import org.openqa.selenium.chrome.ChromeOptions;
