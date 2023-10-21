@@ -10,4 +10,9 @@ import org.aeonbits.owner.Config;
 })
 public interface TestFireConfig extends Config {
     String url();
+    @Key("explicit.mintime")
+    int explicitMinimumTime();
+    @Key("explicit.maxtime")
+    int explicitMaximumTime();
+    String browser();
 }
