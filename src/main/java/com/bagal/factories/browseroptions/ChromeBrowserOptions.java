@@ -1,5 +1,6 @@
 package com.bagal.factories.browseroptions;
 
+import com.bagal.configs.TestFireConfigReader;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public final class ChromeBrowserOptions {
@@ -10,6 +11,9 @@ public final class ChromeBrowserOptions {
         options.addArguments("--disable-notifications");
         options.addArguments("--start-maximized");
         options.addArguments("--incognito");
+        if(TestFireConfigReader.getTestFireConfigs().headless()){
+            options.addArguments("--headless");
+        }
         return options;
     }
 }
