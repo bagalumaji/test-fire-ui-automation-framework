@@ -15,4 +15,6 @@ public interface TestFireConfig extends Config {
     @Key("explicit.maxtime")
     int explicitMaximumTime();
     String browser();
+
+    boolean headless();
 }
