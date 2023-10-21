@@ -1,19 +1,13 @@
 package com.bagal.tests;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import com.bagal.drivers.DriverManager;
+import com.bagal.testbase.TestBase;
 import org.testng.annotations.Test;
 
-import static com.bagal.configs.TestFireConfigReader.getTestFireConfigs;
-
-public class LoginTests {
+public class LoginTests extends TestBase {
     @Test
     public void loginTest(){
-        WebDriver driver  = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get(getTestFireConfigs().url());
-        System.out.println("driver.getTitle() = " + driver.getTitle());
-        System.out.println("driver.getCurrentUrl() = " + driver.getCurrentUrl());
-        driver.quit();
+        System.out.println("DriverManager.getDriver().getCurrentUrl() = " + DriverManager.getDriver().getCurrentUrl());
+        System.out.println("DriverManager.getDriver().getTitle() = " + DriverManager.getDriver().getTitle());
     }
 }
