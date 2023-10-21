@@ -1,8 +1,8 @@
 package com.bagal.factories;
 
 import com.bagal.exceptions.InvalidBrowserNameException;
-import com.bagal.factories.browseroptions.ChromeBrowserOptions;
-import com.bagal.factories.browseroptions.FirefoxBrowserOptions;
+import com.bagal.browseroptions.ChromeBrowserOptions;
+import com.bagal.browseroptions.FirefoxBrowserOptions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
