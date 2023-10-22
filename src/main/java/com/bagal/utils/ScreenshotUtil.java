@@ -1,4 +1,5 @@
 package com.bagal.utils;
 
-public class ScreenshotUtil {
+public final class ScreenshotUtil {
+    private ScreenshotUtil(){}
 }
