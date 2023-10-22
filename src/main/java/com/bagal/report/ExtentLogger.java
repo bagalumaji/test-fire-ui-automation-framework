@@ -1,4 +1,5 @@
 package com.bagal.report;
 
-public class ExtentLogger {
+public final class ExtentLogger {
+    private ExtentLogger(){}
 }
