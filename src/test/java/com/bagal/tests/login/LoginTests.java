@@ -1,4 +1,4 @@
-package com.bagal.tests;
+package com.bagal.tests.login;
 
 import com.bagal.pages.HomePage;
 import com.bagal.testbase.TestBase;
