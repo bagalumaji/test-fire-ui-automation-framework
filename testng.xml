@@ -3,7 +3,7 @@
 <suite name="Test Fire Application" verbose="1" >
     <test name="Regression Test Demo">
         <classes>
-            <class name="com.bagal.tests.LoginTests"/>
+            <class name="com.bagal.tests.login.LoginTests"/>
         </classes>
     </test>
 </suite>
