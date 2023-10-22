@@ -24,7 +24,7 @@ public final class ExtentReport {
     }
 
     public static void createTest(String testCaseName){
-         extentReports.createTest(testCaseName);
+         ExtentManager.setExtentTest(extentReports.createTest(testCaseName));
     }
     public static void flushReport(){
         if(Objects.nonNull(extentReports)){
