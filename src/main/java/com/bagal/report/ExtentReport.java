@@ -29,6 +29,7 @@ public final class ExtentReport {
     public static void flushReport(){
         if(Objects.nonNull(extentReports)){
             extentReports.flush();
+            ExtentManager.unload();
         }
     }
 }
