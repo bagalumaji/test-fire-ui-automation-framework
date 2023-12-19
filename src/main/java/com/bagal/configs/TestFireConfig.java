@@ -29,4 +29,9 @@ public interface TestFireConfig extends Config {
 
     @Key("password")
     String password();
+    @Key("retry.count")
+    int retryCount();
+
+    @Key("retry")
+    boolean retry();
 }
