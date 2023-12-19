@@ -1,5 +1,8 @@
 package com.bagal.report;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.bagal.utils.ScreenshotUtil;
+
 public final class ExtentLogger {
     private ExtentLogger(){}
     public static void info(String message){
@@ -10,6 +13,7 @@ public final class ExtentLogger {
     }
     public static void fail(String message){
         ExtentManager.getExtentTest().fail(message);
+        ExtentManager.getExtentTest().fail(message, MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtil.getScreenshotAsBase64Format()).build());
     }
     public static void skip(String message){
         ExtentManager.getExtentTest().skip(message);
