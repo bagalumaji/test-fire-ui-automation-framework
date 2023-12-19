@@ -2,6 +2,7 @@
 
 <suite name="Test Fire Application" verbose="1" >
     <listeners>
+     <listener class-name="com.bagal.listeners.RetryListener"/>
         <listener class-name="com.bagal.listeners.TestFireListener"/>
     </listeners>
     <test name="Regression Test Demo">
