@@ -34,7 +34,6 @@ public class TestFireListener implements ISuiteListener, ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-     //   fail(MediaEntityBuilder.createScreenCaptureFromBase64String(ScreenshotUtil.getScreenshotAsBase64Format()).build().toString());
         fail(result.getThrowable().getCause().getMessage());
         fail(MarkupHelper.createLabel(result.getMethod().getConstructorOrMethod().getMethod().getDeclaredAnnotation(Test.class).description()+ " is failed", ExtentColor.RED).getMarkup());
     }
